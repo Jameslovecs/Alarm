@@ -1,0 +1,19 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 5
+    buildToolsVersion "25.0.1"
+
+    defaultConfig {
+        applicationId "com.yarin.android.Examples_07_07"
+        minSdkVersion 5
+        targetSdkVersion 5
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
